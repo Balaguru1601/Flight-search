@@ -1,0 +1,122 @@
+body {
+	font-family: "Koh Santepheap", cursive;
+}
+
+.card {
+	width: 70%;
+	margin: 5rem 0;
+    background-color: #2794EB;
+    color: #FFEDED;
+}
+
+.card-b {
+	width: 100%;
+}
+
+.card-content {
+	padding: 1.5rem 0 0 1.5rem;
+}
+
+.card-header{
+    background-color: #0F52BA;
+}
+
+#card-section {
+	display: none;
+    background-color: #BEF2EB;
+    color: #272932;
+}
+
+.cols {
+	margin: 1.5rem 0;
+}
+
+.cust-margin {
+	padding: 5rem;
+}
+
+.first-section {
+	text-align: center;
+	background-color: #f8f1f1;
+	color: #3c415c;
+}
+
+.form-group {
+	width: 85%;
+}
+
+.h3 {
+	text-align: left;
+	padding-top: 2rem;
+}
+
+.labels {
+	font-size: 1.5rem;
+}
+
+.main-div {
+	text-align: center;
+	background-color: #39a2db;
+}
+
+.main-head {
+	font-family: "Yaldevi", sans-serif;
+	font-weight: 700;
+	font-size: 8rem;
+	color: aliceblue;
+}
+
+.plane-img {
+	padding: 10rem 0 0 4rem;
+	max-width: 100%;
+}
+
+@media (max-width: 765px) {
+	.form-group {
+		text-align: left;
+	}
+
+	.cols {
+		margin: 0.75rem 0;
+	}
+
+	.labels {
+		padding: 0;
+		font-size: 1.25rem;
+	}
+    	.plane-img {
+		padding: 10rem 2rem 0;
+	}
+    .card{
+        width: 85%;
+    }
+}
+
+@media (min-width: 765px) and (max-width: 1000px) {
+	.form-group {
+		width: 80%;
+	}
+    .card{
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+	.form-group {
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px){
+    .main-head{
+        font-size: 6rem;
+        padding: 2.5rem 0;
+    }
+}

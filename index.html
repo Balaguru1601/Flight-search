@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@700&family=Yaldevi:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="app.css" />
+		<title>Flight deals</title>
+	</head>
+	<body>
+		<main class="container-fluid main-div">
+			<img
+				src="cloud.png"
+				alt="cloud-img"
+				class="cloud-img cust-margin"
+			/>
+			<h1 class="cust-margin main-head ">Flight deals finder</h1>
+			<img
+				src="cloud.png"
+				alt="cloud-img"
+				class="cloud-img cust-margin"
+			/>
+		</main>
+		<section class="container-fluid first-section" id="first-section">
+			<div class="row">
+				<div class="col-xl-6">
+					<img src="plane.webp" alt="" class="plane-img img-fluid" />
+				</div>
+				<div class="cust-margin col-xl-6">
+					<h3 class="h3 cust-margin">Search here:</h3>
+					<form action="post" class="search-form" method="POST">
+						<div class="form-group mx-auto row">
+							<label for="from" class="col-md-6 cols labels"
+								>From:
+							</label>
+							<input
+								type="text"
+								name="from"
+								id="from"
+								class="col-md-6 cols form-control"
+							/>
+							<label for="to" class="col-md-6 cols labels"
+								>Destination:
+							</label>
+							<input
+								type="text"
+								name="to"
+								id="to"
+								class="col-md-6 cols form-control"
+							/>
+							<label
+								for="Departure: "
+								class="col-md-6 cols labels"
+								>Departure:
+							</label>
+							<input
+								type="date"
+								name="departure"
+								id="departure"
+								class="col-md-6 cols form-control"
+							/>
+							<label for="arrival" class="col-md-6 cols labels"
+								>Arrival:
+							</label>
+							<input
+								type="date"
+								name="arrival"
+								id="arrival"
+								class="col-md-6 cols form-control"
+							/>
+							<label for="" class="col-md-6 cols labels"
+								>Budget($):
+							</label>
+							<input
+								type="text"
+								name="budget"
+								id="budget"
+								class="col-md-6 cols form-control"
+							/>
+						</div>
+						<button
+							type="button"
+							class="btn-primary btn-lg"
+							onclick="search()"
+						>
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="cards cust-margin" id="card-section">
+			<h3 class="h3 cust-margin">Available Deals:</h3>
+		</section>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script src="app.js"></script>
+	</body>
+</html>
